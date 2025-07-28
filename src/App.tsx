@@ -32,6 +32,13 @@ function App() {
             ></ColorButton>
           ))}
         </div>
+        <div>
+          <ColorButton
+            color={""}
+            onClick={() => setColor("")}
+            btnName={"Reset"}
+          ></ColorButton>
+        </div>
         <div className="input-container">
           <input type="text" placeholder="Enter Hex value" ref={inputRef} />
           <button onClick={() => setColor("#" + inputRef.current?.value)}>
